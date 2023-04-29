@@ -8,9 +8,9 @@ Enter your grades for the different coursework assignments, and your final grade
 
 The website's styling is mostly borrowed from [https://github.com/carrot2803/website.git].
 
-To use the C++ program, simply run the CW.cpp file via terminal inputs.
+To use the website calculator, visit [https://carrot2803.github.io/Comp1603-CWGenerator/].
 
-To use the website calculator, visit [insert link here] 
+To use the C++ program, simply run the CW.cpp file via terminal inputs.
 
 ## Why C++?
 
