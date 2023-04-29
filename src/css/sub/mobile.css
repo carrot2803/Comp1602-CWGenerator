@@ -65,5 +65,9 @@
         top: 0;
         right: 0;
     }
+
+    .title{
+        display: none;
+    }
 }
 
