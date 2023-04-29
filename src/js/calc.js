@@ -14,17 +14,17 @@ form.addEventListener('submit', function (event) {
     const finalGradeElem = document.getElementById('final-grade');
     const finalGrade = calculateGrade(grades);
 
-    console.log(`The final grade is: ${finalGrade}`);
-    finalGradeElem.textContent = `The final grade is: ${finalGrade}`;
+    finalGradeElem.textContent = `The final grade is: ${Math.floor(finalGrade)}`;
     container.classList.add("sign-up-mode");
 });
 
 function calculateGrade(grades) {
-    return (
+    return ((
         (grades[0] / 100 * 0.06) +
         (grades[1] / 100 * 0.07) +
         (grades[2] / 50 * 0.07) +
         (grades[3] / 30 * 0.15) +
         (grades[4] / 65 * 0.15)
-    ) * 50;
+    ))*100;
 }
+
