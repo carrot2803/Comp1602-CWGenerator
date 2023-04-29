@@ -1,6 +1,5 @@
 /* CSS for mobile screens */
 @media only screen and (max-width: 600px) {
-
     /* Adjust container width and padding */
     .container {
         width: 100%;
@@ -43,7 +42,9 @@
 }
 
 @media only screen and (max-width: 1000px) {
-
+    body{
+        background-color: var(---background);
+    }
     /* Adjust container width and padding */
     .container {
         width: 80%;
