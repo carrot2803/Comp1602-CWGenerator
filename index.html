@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>CW calculator</title>
+	<link rel="stylesheet" type="text/css" href="./src/css/index.css" />
+	<script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="light">
+	<div class="container">
+		<div class="forms-container">
+			<div class="signin-signup">
+				<form action="" class="sign-in-form">
+					<h2 class="title">Enter Grades</h2>
+					<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="number" placeholder="Assignment 1" min="0" max="100" step="0.1" required />
+					</div>
+					<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="number" placeholder="Assignment 2" min="0" max="100" step="0.1" required />
+					</div>
+					<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="number" placeholder="Assignment 3" min="0" max="50" step="0.1" required />
+					</div>
+					<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="number" placeholder="CourseWork 1" min="0" max="30" step="0.1" required />
+					</div>
+					<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="number" placeholder="CourseWork 2" min="0" max="65" step="0.1" required />
+					</div>
+					<input type="submit" value="Enter" class="btn solid" id="signup-btn" />
+				</form>
+
+				<form action="" class="sign-up-form">
+					<h2 class="title">Calculate Final Grade</h2>
+					<!-- <button class="btn" id="calculate-btn">Calculate</button> -->
+					<p style="font-size: large;" id="final-grade">Press enter</p>
+				</form>
+			</div>
+		</div>
+
+		<div class="panels-container">
+			<div class="panel left-panel">
+				<div class="content">
+					<h3>Calculate your grades quickly</h3>
+					<p>Select enter and then continue</p>
+					<button class="btn transparent" id="sign-up-btn">Continue</button>
+				</div>
+				<img src="./src/img/signup.svg" class="image" alt="sing up image">
+			</div>
+
+			<div class="panel right-panel">
+				<div class="content">
+					<h3>Want to re-enter?</h3>
+					<p>Click here</p>
+					<button class="btn transparent" id="sign-in-btn">Input</button>
+				</div>
+				<img src="./src/img/signin.svg" class="image" alt="sign in image">
+			</div>
+		</div>
+	</div>
+
+	<script src="./src/js/swap.js"></script>
+	<script src="./src/js/theme.js"></script>
+	<script src="./src/js/calc.js"></script>
+</body>
+
+</html>
