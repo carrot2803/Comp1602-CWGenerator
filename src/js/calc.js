@@ -20,7 +20,7 @@ form.addEventListener('submit', function (event) {
 });
 
 function calculateGrade(grades) {
-    return Math.ceil(
+    return (
         (grades[0] / 100 * 0.06) +
         (grades[1] / 100 * 0.07) +
         (grades[2] / 50 * 0.07) +
