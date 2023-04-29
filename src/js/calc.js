@@ -2,6 +2,7 @@ const form = document.querySelector('.sign-in-form');
 
 form.addEventListener('submit', function (event) {
     event.preventDefault(); // prevent the form from submitting
+    
 
     const inputs = form.querySelectorAll('input');
     const grades = [];
@@ -15,10 +16,11 @@ form.addEventListener('submit', function (event) {
 
     console.log(`The final grade is: ${finalGrade}`);
     finalGradeElem.textContent = `The final grade is: ${finalGrade}`;
+    container.classList.add("sign-up-mode");
 });
 
 function calculateGrade(grades) {
-    return (
+    return Math.ceil(
         (grades[0] / 100 * 0.06) +
         (grades[1] / 100 * 0.07) +
         (grades[2] / 50 * 0.07) +
