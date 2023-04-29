@@ -56,10 +56,6 @@
         margin: 5px 20rem 0 0;
         text-align: center;
     }
-
-}
-
-@media only screen and (max-height: 1000px) {
     .panel .image {
         max-width: 100%;
         height: auto;
@@ -69,3 +65,4 @@
         right: 0;
     }
 }
+
